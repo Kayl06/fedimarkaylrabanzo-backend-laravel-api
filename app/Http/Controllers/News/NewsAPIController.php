@@ -25,7 +25,7 @@ class NewsAPIController
 
     public function getEverythingAbout($q = null, $sources = null, $domains = null, $exclude_domains = null, $from = null, $to = null)
     {
-        return $this->news_api->getEverything($q, $sources);
+        return $this->news_api->getEverything($q, $sources, null, null, $from, $to);
     }
 
     public function getTopHeadlines($q, $sources = null, $country = 'us', $category = null)
